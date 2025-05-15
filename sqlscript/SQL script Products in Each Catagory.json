@@ -1,0 +1,17 @@
+{
+	"name": "SQL script Products in Each Catagory",
+	"properties": {
+		"content": {
+			"query": "SELECT\n    Category, COUNT(*) AS ProductCount\nFROM\n    OPENROWSET(\n        BULK 'https://datalake8xze761.dfs.core.windows.net/files/products.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0',\n        HEADER_ROW = TRUE\n    ) AS [result]\nGROUP BY Category;\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
