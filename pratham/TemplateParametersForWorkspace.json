@@ -5,17 +5,32 @@
 		"workspaceName": {
 			"value": "pratham"
 		},
+		"AzureBlobStorage_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase_password": {
+			"value": ""
+		},
 		"pratham-WorkspaceDefaultSqlServer_connectionString": {
 			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:pratham.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
 		},
 		"synapse8xze761-WorkspaceDefaultSqlServer_connectionString": {
 			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapse8xze761.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
 		},
+		"AzureSqlDatabase_properties_typeProperties_server": {
+			"value": "use-case.database.windows.net"
+		},
+		"AzureSqlDatabase_properties_typeProperties_database": {
+			"value": "use-case"
+		},
+		"AzureSqlDatabase_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
 		"HttpProducts_properties_typeProperties_url": {
 			"value": "https://raw.githubusercontent.com/MicrosoftLearning/dp-203-azure-data-engineer/master/Allfiles/labs/01/adventureworks/products.csv"
 		},
 		"pratham-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"value": "https://datalake8xze761.dfs.core.windows.net"
+			"value": "https://prathamdatalake.dfs.core.windows.net"
 		},
 		"synapse8xze761-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"value": "https://datalake8xze761.dfs.core.windows.net"
