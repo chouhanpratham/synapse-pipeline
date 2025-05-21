@@ -3,7 +3,7 @@
 	"type": "Microsoft.Synapse/workspaces/linkedservices",
 	"properties": {
 		"typeProperties": {
-			"url": "https://datalake8xze761.dfs.core.windows.net"
+			"url": "https://prathamdatalake.dfs.core.windows.net"
 		},
 		"type": "AzureBlobFS",
 		"connectVia": {
