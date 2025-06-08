@@ -1,0 +1,40 @@
+{
+	"name": "AzureSqlTables",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ResultId",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "AssessmentId",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "UserId",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "Score",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "AttemptDate",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Results"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
